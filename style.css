@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@400;700&family=Vina+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero{
+    /* width: 100vw; */
+    background-image:url(asset/images/hero.jpg);
+    background-position: center center;
+    object-fit: cover;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Vina Sans', sans-serif;
+    position: relative;
+}
+.hero nav {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+.hero nav img{
+    width: 140px;
+}
+
+.hero .darkScreen{
+    background-color: black;
+    opacity: 0.59;    
+    height: 100%;
+    position:absolute;
+    top: 0;
+    width: 100%;
+}
+.hero .content{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: none;
+padding: 150px 0 70px 0;
+}
+.hero .content .text{
+    position: relative;
+    z-index: 11;
+    color: white;
+    text-align: center;
+    width: 80vw;
+}
+.hero .content .text h1,h2,.input{
+    padding: 16px 0;
+}
+ .hero .content .text span{
+    font-size: 48px;
+ } 
+.hero .content h2{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+/* design input email */
+.hero .content .text input, .about_netflix .third_content .input input{
+    padding: 17px  10px;
+    width: 350px;
+    border-radius: 4px;
+    background-color: black;
+    opacity: 0.6;
+    border: 1px solid black;
+    margin: 5px 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: 0.25rem white;
+}
+.hero .content .text button, .about_netflix .third_content .input button{
+    background-color: rgb(229, 9, 20);
+    padding: 13px 30px;
+    font-size: 24px;
+    font-weight: 550;
+    color: white;
+    border-radius: 5px;
+    border: 0.25rem;
+    cursor: pointer;
+}
+.hero .content .text button i, .about_netflix .third_content .input button i{
+    padding:0 0 0 20px;
+}
+.hero nav button{
+    padding: 8px 20px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: none;
+    margin: 0 0 0 10px;
+}
+.line{
+    height: 8px;
+    background-color: rgba(45, 38, 38, 0.8);
+}
+.marketing{
+    background-color: black;
+    color: white;
+}
+.marketing .anothercontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    width: 80vw;
+    margin: auto;
+}
+.marketing .anothercontent .tv img{
+    width: 550px;
+    position: relative;
+    z-index: 10;
+}
+.marketing .anothercontent .tv{
+    position: relative;
+}
+.marketing .anothercontent .tv #first_tv{
+    position: absolute;
+    top: 85px;
+    right: 0px;
+    left: 73px;
+    width: 400px;
+}
+.marketing .anothercontent .tv #second_tv{
+    position: absolute;
+    top: 34px;
+    right: 0px;
+    left: 100px;
+    width: 343px;
+}
+ .marketing .anothercontent .txt .first-child
+{
+    font-size: 48px;
+    padding: 10px 0;
+}
+.txt .second-child
+{
+    font-size: 28px;
+}
+.about_netflix{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about_netflix .third_content{
+    padding: 50px 0 20px 0;
+    width: 70vw;
+}
+.about_netflix .third_content .heading{
+    font-size: 48px;
+}
+.about_netflix .third_content .questions{
+    padding: 40px 0 20px 0;
+}
+.about_netflix .third_content .questions .ask{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    font-size: 30px;
+    background-color: rgba(100,100,100,0.48);
+    margin: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+footer .txt2{
+    width: 80vw;
+    margin: auto;
+    /* background-color:aqua; */
+    opacity: 0.6;
+    padding: 60px;
+    line-height: 4rem;
+}
+footer .txt2 .q a{
+    color: white;
+    padding: 30px 0;
+}
+footer .txt3 ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .txt3 ul li{
+    min-width: 25%;
+    line-height: 2.7rem;
+    list-style: none;
+}
+footer .txt3 ul li a{
+    color: white;
+}
+footer .txt2 .bhasa{
+    margin: 5px 0;
+}
+footer .txt2 .bhasa #language, .hero nav .language #bhasa{
+    padding: 7px 20px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Media qurie start from here */
+@media (320px >= width)
+{
+    .marketing .anothercontent .tv img {
+        width: 230px;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width:500px)
+{
+    .hero{
+        background-position: center center;
+        object-fit: cover;
+        background-size: cover;
+    }
+    .hero .content{
+        padding: 30px 0 30px 0;
+    }
+    .hero .content .text span{
+        font-size: 36px;
+     } 
+     .hero .content h2{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .hero .content .text input{
+        padding: 15px  5px;
+        width: 80vw;
+    }
+    .hero .content .text button
+    {
+        padding: 13px 20px;
+        font-size: 18px;
+    }
+    .hero nav .language #bhasa{
+        padding: 7px 5px;
+    }
+    .hero nav img{
+        width: 100px;
+    }
+    .marketing .anothercontent{
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .marketing .anothercontent .tv img{
+        width: 332px;
+        margin: 30px 0;
+    }
+    .marketing .anothercontent .tv #first_tv {
+        position: absolute;
+        top: 83px;
+        right: 0px;
+        left: 43px;
+        width: 243px;
+    }
+    .marketing .anothercontent .tv #second_tv {
+        position: absolute;
+        top: 53px;
+        right: 0px;
+        left: 65px;
+        width: 199px;
+    }
+    .marketing .anothercontent .tv video{
+     width: 200px;
+    }
+    .marketing .anothercontent .txt .first-child
+    {
+        font-size: 32px;
+        padding: 20px 0;
+    }
+    .txt .second-child
+    {
+        font-size: 14px;
+    }
+    .about_netflix .third_content{
+        padding: 20px 0;
+        width: 80vw;
+    }
+    .about_netflix .third_content .heading{
+        font-size: 28px;
+    }
+    .about_netflix .third_content .questions{
+        padding: 20px 0;
+    }
+    .about_netflix .third_content .questions .ask{
+        padding: 20px 8px;
+        font-size: 15px;
+        width: 100%;
+    }
+    .about_netflix .third_content .input h2{
+        font-size: 20px;
+        padding: 0 0;
+    }
+    .about_netflix .third_content .input input{
+        width: 80vw;
+        font-size: 14px;
+    }
+    footer .txt2{
+        padding: 40px 0;
+    }
+    footer .txt3 ul li{
+        min-width: 50%;
+    }
+
+}
+
+@media only screen and (501px <= width <= 768px) {
+    .hero{
+        background-position: center center;
+        object-fit: cover;
+        background-size: cover;
+    }
+    .hero .content{
+        padding: 20px 0 70px 0;
+    }
+    .hero .content .text span{
+        font-size: 40px;
+     } 
+     .hero .content h2{
+        font-size: 23px;
+        font-weight: 400;
+    }
+    .marketing .anothercontent{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .marketing .anothercontent .tv img{
+        width: 480px;
+        /* margin: 30px 0; */
+    }
+    .marketing .anothercontent .tv #first_tv {
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        left: 63px;
+        width: 350px;
+    }
+    .marketing .anothercontent .txt .first-child
+    {
+        font-size: 40px;
+        /* padding: 20px 0; */
+    }
+    .marketing .anothercontent .txt .first-child
+    {
+        font-size: 40px;
+        padding: 20px 0 30px 0;
+    }
+    .marketing .anothercontent .tv img{
+        width: 480px;
+    }
+    .marketing .anothercontent .tv #second_tv {
+        position: absolute;
+        top: 27px;
+        right: 0px;
+        left: 91px;
+        width: 299px;
+    }
+    .txt .second-child
+    {
+        font-size: 20px;
+    }
+    .about_netflix .third_content .heading{
+        font-size: 40px;
+    }
+    .about_netflix .third_content .questions .ask{
+        font-size: 25px;
+        width: 100%;
+    }
+    footer .txt3 ul li{
+        min-width: 30%;
+    }
+    footer .txt2{
+        padding: 60px 0;
+    }
+    footer .txt3 ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media only screen and (769px <= width <= 1024px) {
+    .hero{
+        background-position: center center;
+        object-fit: cover;
+        background-size: cover;
+    }
+    .hero .content{
+        padding: 50px 0 70px 0;
+    }
+    .hero .content .text span{
+        font-size: 44px;
+     } 
+     .hero .content h2{
+        font-size: 23px;
+        font-weight: 400;
+    }
+    .marketing .anothercontent{
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    .marketing .anothercontent .tv img{
+        width: 550px;
+        /* margin: 30px 0; */
+    }
+    .marketing .anothercontent .txt .first-child
+    {
+        font-size: 44px;
+        /* padding: 20px 0; */
+    }
+    .marketing .anothercontent .txt .first-child
+    {
+        font-size: 44px;
+        padding: 20px 0 30px 0;
+    }
+    .txt .second-child
+    {
+        font-size: 20px;
+    }
+    .about_netflix .third_content .heading{
+        font-size: 40px;
+    }
+    .about_netflix .third_content .questions .ask{
+        font-size: 25px;
+        width: 100%;
+    }
+    footer .txt3 ul li{
+        min-width: 30%;
+    }
+    footer .txt2{
+        padding: 60px 0;
+    }
+    footer .txt3 ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
